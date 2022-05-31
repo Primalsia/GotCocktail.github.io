@@ -1,0 +1,152 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'fantasy', sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+body {
+  max-height: 600px;
+  background-color: #A69586;
+}
+
+.drink-name h1 {
+	font-size: 2rem;
+	color: #F2EAC2;
+	font-weight: 600;
+	text-align: center;
+}
+
+h4 {
+	color: #F2D750;
+  text-align: center;
+}
+
+h4 + p {
+  margin-top: 15px;
+}
+
+p {
+  font-size: 12px;
+}
+
+ul {
+	margin-top: 15px;
+	list-style: inside;
+  font-size: 12px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.swiper {
+	width: 75%;
+	padding: 40px;
+	border-radius: 20px;
+	font-family: 'Cooper', 'Times New Roman', Times, serif;
+}
+
+section .card .image {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  padding: 3px;
+  background-color: #40362E;
+}
+
+section .card .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.card {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  margin: 20px 0px;
+  box-shadow: 5px 4.8px 2.8px -20px #1a15117c, 27px 26px 22px -20px #2c221a21;
+}
+
+.card::before {
+	content: '';
+	position: absolute;
+	height: 28%;
+	width: 100%;
+	background-color: #40362E;
+	border-radius: 20px 20px 0 0;
+}
+
+.card .card-content {
+  height: 700px; /*Set height for all cards*/
+	padding: 30px;
+	position: relative;
+	z-index: 100;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.ingredients {
+  display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-top: 15px;
+}
+
+.instructions {
+  margin-top: 15px;
+}
+
+.card .drink-name {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.swiper-button-next {
+	color: #40362E;
+	top: 75%;
+	padding-right: 50px;
+}
+
+.swiper-button-prev {
+	color: #40362E;
+	top: 75%;
+	padding-left: 50px;
+}
+
+.swiper-pagination-bullet-active {
+	background: #40362E;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+	padding-bottom: 2rem;
+	padding-top: 2.5rem;
+	position: relative;
+}
+
+.swiper-button-prev:after {
+	font-weight: 700;
+  color: #40362E;
+}
+
+.swiper-button-next:after {
+	font-weight: 700;
+  color: #40362E;
+}
+
