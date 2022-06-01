@@ -5,7 +5,7 @@
   </a>
 </div>
 
-<h3 align="left">Get Your Cocktail On!</h3>
+<h3 align="center">Get Your Cocktail On!</h3>
 
 <h2 align="left">How It's Made:</h2>
 
